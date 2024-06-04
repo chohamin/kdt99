@@ -7,8 +7,8 @@
     <title>하민의 웹페이지</title>
 </head>
 <body>
-    안녕하세요!!<br>
-    환영합니다.<br>
+    안녕하세요!! 하루의 일상을 그려나가는 학생입니다.<br>
+    환영합니다. 오늘 하루 최고의 날이 되길 바랍니다.<br>
     여기는 새로운 공간입니다.<br>
     <a 
     href="https://chohamin.github.io/kdt99/%EB%AF%B8%EB%8B%88%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%B5%9C%EC%A2%85%EB%B0%9C%ED%91%9C%20PPT%20(%EC%B5%9C%EC%A2%85%EB%B3%B8).pdf">
@@ -22,5 +22,16 @@
     <a href="https://dd30record.com/?utm_source=kakao&utm_medium=conversion&utm_campaign=dd30record&utm_content=bizboard_ad5">던킨과 함께 해요.</a>
     <img src="https://t1.daumcdn.net/news/202106/29/ned/20210629083701727qymc.jpg" alt="대청호">
     <img src="https://img.lovepik.com/free-png/20211203/lovepik-children-playing-in-hand-png-image_401283255_wh1200.png" alt="카카오톡">
+    <p id="date"></p>
+    <script>
+      // 현재 날짜를 가져옵니다.
+      var today = new Date();
+  
+      // 날짜를 원하는 형식으로 포맷합니다.
+      var formattedDate = today.toISOString().slice(0, 10);
+  
+      // 날짜를 HTML 요소에 출력합니다.
+      document.getElementById("date").innerText = formattedDate;
+    </script>
 </body>
 </html>
