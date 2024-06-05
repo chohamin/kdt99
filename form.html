@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <!DOCTYPE html>
+<html lang="kr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,8 +54,8 @@
         <option>영국</option>
       </select>
       </datalist> -->
-      
-      <form method="get">
+
+      <!-- <form method="get">
         <label for="name">이름</label> <input id="name"><br>
         <label for="age">나이</label> <input id="age" type="number" min="0"><br>
         <label for="email">이메일</label> <input id="email" type="email"><br>
@@ -67,6 +67,44 @@
           <option>일본</option>
           <option>미국</option>
           <option>영국</option>
+        </select>
+        <br><br>
+        <button type="reset">초기화</button>
+        <button type="submit">제출</button>
+      </form>
+</body>
+</html>
+ --> 
+
+
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05form</title>
+</head>
+<body>
+      <form method="get">
+        <label for="name">이름</label> 
+        <input id="name" name="name"><br>
+
+        <label for="age">나이</label> 
+        <input id="age" name="age" type="number" min="0"><br>
+
+        <label for="email">이메일</label> 
+        <input id="email" name="email" type="email"><br>
+
+        <label for="birth">생년월일</label> 
+        <input id="birth" name="birth" type="date"><br>
+
+        <label for="country">국가</label>
+        <select id="country" name="country">
+          <option value="kr">대한민국</option>
+          <option value="cn">중국</option>
+          <option value="jp">일본</option>
+          <option value="us">미국</option>
+          <option value="uk">영국</option>
         </select>
         <br><br>
         <button type="reset">초기화</button>
