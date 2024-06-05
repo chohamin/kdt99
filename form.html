@@ -6,6 +6,13 @@
   <title>05form</title>
 </head>
 <body>
+      <!-- <div>여러 줄로 쓸 수 있습니다.</div>
+      <textarea rows="4"></textarea>
+      <div>이름과 나이</div>
+      <input>
+      <label>이름</label><br>
+      <input type="number" min="0">
+      <label>나이</label> -->
       <!-- <input name="data" required>
       <div>이메일을 입력하세요.</div>
       <input placeholder="cho990924@naver.com">
@@ -47,12 +54,12 @@
         <option>영국</option>
       </select>
       </datalist> -->
-
-      <form>
-        <label for="name">이름</label><input id='name'><br>
-        <label for="age">나이</label><input id='age' type='number'min="0"><br>
-        <label for="email">이메일</label><input id='email' type='email'min="0"><br>
-        <label for="birth">생년월일</label><input id='birth' type='date'min="0"><br>
+      
+      <form method="get">
+        <label for="name">이름</label> <input id="name"><br>
+        <label for="age">나이</label> <input id="age" type="number" min="0"><br>
+        <label for="email">이메일</label> <input id="email" type="email"><br>
+        <label for="birth">생년월일</label> <input id="birth" type="date"><br>
         <label for="country">국가</label>
         <select id="country">
           <option>대한민국</option>
@@ -65,6 +72,5 @@
         <button type="reset">초기화</button>
         <button type="submit">제출</button>
       </form>
-
 </body>
 </html>
