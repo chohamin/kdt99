@@ -6,20 +6,65 @@
   <title>05form</title>
 </head>
 <body>
-      <input name="data" required>
+      <!-- <input name="data" required>
       <div>이메일을 입력하세요.</div>
       <input placeholder="cho990924@naver.com">
       <div>날짜를 입력하세요.</div>
-      <input type="date">
+      <input type="date" value="2024-06-05">
       <div>날짜와 시간을 선택하세요.</div>
-      <input type="datetime-local"
+      <input type="datetime-local"<br>
 
       <div>비밀번호라서 안 보여요</div>
-      <input type="password"
+      <input type="password"<br>
       <div>파일을 선택합니다.</div>
       <input type="file" multiple>
 
+      <label for="email">이메일</label>
       <div>이메일을 입력해 주세요.</div>
       <input type="email">
+
+      <div>성별을 선택해 주세요.</div>
+      <input type="radio" name="g">남성
+      <input type="radio" name="g">여성
+      <br><br>
+      <input type="checkbox">약관에 동의합니다.
+      <div>기본 값을 넣을 수 있습니다.</div>
+      <label for='xxx'></label> 이름:</label></label><input value="기본값">
+
+      <div>색을 선택하세요</div>
+      <input type="color" disabled>
+      <div>읽어 주세요!</div>
+      <input readonly value="수정은 못하고 읽기만 가능" required>
+
+      <div>국가를 선택해 주세요.</div>
+      <input list="dataList">
+      <datalist id="dataList">
+      <select multiple>
+        <option>대한민국</option>
+        <option>중국</option>
+        <option>일본</option>
+        <option>미국</option>
+        <option>영국</option>
+      </select>
+      </datalist> -->
+
+      <form>
+        <label for="name">이름</label><input id='name'><br>
+        <label for="age">나이</label><input id='age' type='number'min="0"><br>
+        <label for="email">이메일</label><input id='email' type='email'min="0"><br>
+        <label for="birth">생년월일</label><input id='birth' type='date'min="0"><br>
+        <label for="country">국가</label>
+        <select id="country">
+          <option>대한민국</option>
+          <option>중국</option>
+          <option>일본</option>
+          <option>미국</option>
+          <option>영국</option>
+        </select>
+        <br><br>
+        <button type="reset">초기화</button>
+        <button type="submit">제출</button>
+      </form>
+
 </body>
 </html>
